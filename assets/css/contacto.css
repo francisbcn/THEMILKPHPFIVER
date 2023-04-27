@@ -1,0 +1,120 @@
+@import url(fonts.css);
+@import url(reset.css);
+@import url(breadcum.css);
+@import url(styles.css);
+
+:root {
+    --green-color: #2AB0A1;
+    --milk-color: #fcfcfc;
+    --dark-color: #212026;
+    --white-color: #ffffff;
+    --transition-out: all 0.2s ease-in-out;
+    --transition-in: all 0.2s ease-in;
+    --font: 'Roboto', sans-serif, 'Open Sans';
+  }
+  
+  *,
+  *::before,
+  *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  #error {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--green-color);
+    font-weight: bold;
+  }
+  
+  /* estilos para el formulario */
+  .form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  /* estilos para las etiquetas */
+  .form-1 section div label {
+    font-family: var(--font);
+    font-size: 1rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+    transition: var(--transition-out);
+    width: 100%;
+  }
+  
+  /* estilos para los campos de entrada */
+  .form-1 section div select,
+  .form-1 section div input[type="text"],
+  .form-1 section div input[type="email"],
+  .form-1 section div input[type="password"],
+  .form-1 section div textarea {
+    font-family: var(--font);
+    font-size: 1rem;
+    color: var(--dark-color);
+    background-color: var(--milk-color);
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    margin-top: 0.5rem;
+    transition: var(--transition-out);
+    width: 100%;
+    
+  }
+
+  textarea{
+    resize: none;
+  }
+  
+  /* estilos para el botón de enviar */
+  .form-1 section #bottom {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    font-family: var(--font);
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    transition: var(--transition-out);
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* estilos para el botón de enviar al pasar el cursor */
+  .form-1 section #bottom:hover {
+    background-color: var(--white-color);
+    color: var(--green-color);
+    transition: var(--transition-in);
+    border: 2px solid var(--green-color);
+  }
+  
+  /* estilos para los mensajes de retroalimentación */
+  .form-1 section div .valid-feedback,
+  .form-1 section div .invalid-feedback {
+    font-family: var(--font);
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* estilos para los mensajes de retroalimentación cuando el campo es válido */
+  .form-1 section div .valid-feedback {
+    color: var(--green-color);
+  }
+  
+  /* estilos para los mensajes de retroalimentación cuando el campo no es válido */
+  .form-1 section div .invalid-feedback {
+    color: red;
+  }
+  
+  /* estilos para el select */
+  .form-1 section div select {
+    appearance: none;
+    background-color: var(--milk-color);
+/*     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpath fill='%23BFBFBF' d='M0 2l4 4 4-4H0z'/%3E%3C/svg%3E"); */
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 0.75rem);
+    background-position-y: center;
+    cursor: pointer;
+  }

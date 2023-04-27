@@ -1,0 +1,160 @@
+:root {
+  --green-color: #2AB0A1;
+  --green-color-light: #b6fff6;
+  --milk-color: #FCFCFC;
+  --dark-color: #212026;
+  --white-color: #FFFFFF;
+  --grey: #F5F5F5
+  --transition-out: all 0.2s ease-in-out;
+  --transition-in: all 0.2s ease-in;
+  --font: 'Roboto', sans-serif, 'Open Sans';
+}
+
+#user-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.login-container {
+  background-color: var(--milk-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 6rem 0;
+  width: 50%;
+}
+
+.login-container h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.login-container input[type="submit"] {
+  background-color: var(--green-color);
+  border-radius: 5px;
+  border: none;
+  color: var(--milk-color);
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--transition-out);
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: #4A4A4A;
+}
+
+.login-container ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.login-container ul li a {
+  color: var(--green-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color var(--transition-in);
+}
+
+.login-container ul li a:hover {
+  color: #4A4A4A;
+}
+.hide {
+  display: none;
+}
+.logged-in-container {
+ 
+  background-color: #212026;
+  color: #fcfcfc;
+  padding: 5px;
+  font-size: 14px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+
+.header__logged-in{
+  display: flex;
+  color: var(--milk-color);
+  /*   align-items: center;
+    justify-content: center; */
+}
+
+.header__logged-in h3{
+  color: var(--milk-color);
+  margin-right: 0.8rem;
+}
+
+.header__logged-in {
+  color: var(--milk-color);
+ 
+}
+
+.header__logged-in .user-logged{
+  color: var(--green-color-light);
+}
+
+.milkiwer-inicio {
+  color: var(--milk-color);
+  font-family: 'Poppins', sans-serif;
+  transition: var(--transition-in);
+}
+
+.milkiwer-inicio:hover {
+  position: relative;
+  font-size: 0.9rem;
+  transition: var(--transition-out);
+}
+
+.milkiwer-inicio:hover:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--milk-color);
+  opacity: 0;
+  animation: bubble 0.5s forwards;
+ 
+}
+
+
+
+@keyframes bubble {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}

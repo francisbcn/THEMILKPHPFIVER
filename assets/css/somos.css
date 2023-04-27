@@ -1,0 +1,296 @@
+:root {
+    --green-color: #2AB0A1;
+    --milk-color: #fcfcfc;
+    --dark-color: #212026;
+    --white-color: #ffffff;
+    --transition-out: all 0.2s ease-in-out;
+    --transition-in: all 0.2s ease-in;
+    --font: 'Roboto', sans-serif, 'Open Sans';
+  }
+
+  
+
+/* Welcome section */
+.welcome-section {
+/*   background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('<?php echo base_url();?>assets/img/THE-MILK-BARCELONA-PORTADA.jpg'); */
+/*   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  padding: 80px 0;
+  text-align: center;
+  width: 100%
+}
+
+
+
+/* .welcome-section img {
+  width: 100%;
+  margin: 0 auto;
+} */
+
+.welcome-text {
+  margin-top: 30px;
+}
+
+.welcome-text h1 {
+  font-size: 3.5em;
+  color: var(--dark-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.welcome-text p {
+  font-size: 1.5em;
+  color: var(--dark-color);
+  line-height: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  
+}
+
+/* Sostenibilidad section */
+section:nth-of-type(2) {
+  padding: 80px 0;
+  text-align: center;
+  background-color: var(--secondary-color);
+  
+}
+
+section:nth-of-type(2) h2 {
+  font-size: 3.5em;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section:nth-of-type(2) img {
+  width: 50%;
+  margin: 50px 0;
+}
+
+section:nth-of-type(2) p {
+  font-size: 1.5em;
+  color: var(--dark-color);
+  line-height: 1.5em;
+  margin: 20px;
+  padding: 0 2rem;
+}
+
+/* Orígenes section */
+section:nth-of-type(3) {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+section:nth-of-type(3) h2 {
+  font-size: 3.5em;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section:nth-of-type(3) img {
+  width: 100%;
+  margin: 50px 0;
+}
+
+section:nth-of-type(3) p {
+  font-size: 1.5em;
+  color: var(--dark-color);
+  line-height: 1.5em;
+  margin-top: 20px;
+  padding: 0 2rem;
+}
+
+/* Nombre y Logo section */
+section:nth-of-type(4),
+section:nth-of-type(5),
+section:nth-of-type(6),
+section:nth-of-type(7) {
+  padding: 80px 0;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+section:nth-of-type(4) h2,
+section:nth-of-type(5) h2,
+section:nth-of-type(6) h2, 
+section:nth-of-type(7) h2{
+  font-size: 3.5em;
+  color: var(--primary-color);
+  font-weight: bold;
+
+text-transform: uppercase;
+}
+
+section:nth-of-type(4) img,
+section:nth-of-type(5) img,
+section:nth-of-type(6) img,
+section:nth-of-type(7) img {
+width: 100%;
+margin: 50px 0;
+}
+
+section:nth-of-type(4) p,
+section:nth-of-type(5) p,
+section:nth-of-type(6) p ,
+section:nth-of-type(7) p{
+font-size: 1.5em;
+color: var(--dark-color);
+line-height: 1.5em;
+margin-top: 20px;
+padding: 0 2rem;
+}
+
+/* ////// somos banner // */
+
+
+.somos-banner h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  color: var(--milk-color);
+  margin: 20px 0px 0px;
+  font-weight: 700;
+  background-color: var(--dark-color);
+  padding: 4.4rem 0;
+  transition: var(--transition-out);
+}
+
+.somos-banner h2 .unique,
+.somos-banner h2 .different,
+.somos-banner h2 .proud {
+  background: linear-gradient(to right, #FF6B6B, #FEB96B, #FFD56B, #91FF6B, #6BFFD4, #6B8CFF, #D56BFF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.somos-banner:hover h2 .milkable {
+  color: var(--milk-color);
+  transition: var(--transition-in);
+}
+
+.somos-banner:hover h2 {
+  transition: var(--transition-in);
+  cursor: pointer;
+}
+
+
+/* .somos-banner {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  }
+  
+  .somos-banner h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  color: #fff;
+  margin: 20px 0px 0px;
+  font-weight: 700;
+  padding: 3rem 0;
+  transition: var(--transition-out);
+  background: linear-gradient(to right, #E91E63, #F06292, #FFB74D, #4CAF50, #2196F3, #9C27B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .somos-banner .unique {
+  background: linear-gradient(to right, #E91E63, #F06292, #FFB74D, #4CAF50, #2196F3, #9C27B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .somos-banner .different {
+  background: linear-gradient(to right, #FFB74D, #4CAF50, #2196F3, #9C27B0, #E91E63, #F06292);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .somos-banner .proud {
+  background: linear-gradient(to right, #2196F3, #9C27B0, #E91E63, #F06292, #FFB74D, #4CAF50);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .somos-banner:hover .unique, .somos-banner:hover .different, .somos-banner:hover .proud {
+  color: #fff;
+  transition: var(--transition-in);
+  }
+  
+  .somos-banner:hover h2 {
+  transition: var(--transition-in);
+  cursor: pointer;
+
+  }
+  
+  .somos-banner span.header__title {
+  letter-spacing: 5px;
+  text-align: center;
+  color: #fff;
+  margin: 20px 0px;
+  font-weight: 700;
+  padding: 1.4rem;
+  transition: var(--transition-out);
+  display: inline-block;
+  background: linear-gradient(to right, #E91E63, #F06292, #FFB74D, #4CAF50, #2196F3, #9C27B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .somos-banner:hover span.header__title {
+  transition: var(--transition-in);
+  }
+   */
+
+
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+.welcome-image {
+width: 80%;
+}
+
+section:nth-of-type(2) img,
+section:nth-of-type(3) img,
+section:nth-of-type(4) img {
+width: 80%;
+}
+}
+
+@media screen and (max-width: 480px) {
+section:nth-of-type(2) h2,
+section:nth-of-type(3) h2,
+section:nth-of-type(4) h2,
+section:nth-of-type(5) h2,
+section:nth-of-type(6) h2 {
+font-size: 2.5em;
+width: 100%;
+}
+
+.welcome-text h2 {
+font-size: 2.5em;
+}
+
+.welcome-text p {
+font-size: 1.2em;
+}
+
+section:nth-of-type(2) p,
+section:nth-of-type(3) p,
+section:nth-of-type(4) p, 
+section:nth-of-type(5) p,
+section:nth-of-type(6) p{
+font-size: 1.2em;
+}
+
+footer p {
+font-size: 1em;
+}
+}

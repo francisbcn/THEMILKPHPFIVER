@@ -1,0 +1,67 @@
+@import url(reset.css);
+@import url(fonts.css);
+@import url(styles.css);
+
+/* Breadcrumb navigation */
+.header__breadcrumb {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 12px 0px;
+    }
+
+    .header__breadcrumb ol {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    }
+
+    .header__breadcrumb ol li a {
+    color: #212026;
+    text-decoration: none;
+    }
+
+    .header__breadcrumb ol li:before {
+    content: " / ";
+    color: #212026;
+    margin-right: 5px;
+    }
+
+    .header__breadcrumb ol li:first-child:before {
+    content: "";
+    }
+
+    .header__breadcrumb ol li:last-child a {
+    color: #2AB0A1;
+    font-weight: 600;
+    }
+
+
+    /* ******** /////////////   MIGAS DE PAN   //////////////*******  */
+
+    .contbread {
+        display: flex;
+        width: 100%;
+
+    }
+
+
+    .contbread ol {
+        list-style-type: none;
+
+        display: flex;
+        gap: 11px;
+
+        margin: 20px 0 0 36px;
+
+    }
+
+
+    .contbread ol li:not(:last-child)::after {
+        display: inline-block;
+        width: 9px;
+        margin-left: 9px;
+        content: url(../img/chevron-right-solid.svg);
+
+
+    }

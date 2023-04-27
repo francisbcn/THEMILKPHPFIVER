@@ -1,0 +1,55 @@
+:root {
+    --green-color: #2AB0A1;
+    --milk-color: #fcfcfc;
+    --dark-color: #212026;
+    --white-color: #ffffff;
+    --transition-out: all 0.2s ease-in-out;
+    --transition-in: all 0.2s ease-in;
+    --font: 'Roboto', sans-serif, 'Open Sans';
+  }
+  .container-faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: var(--font);
+  }
+  
+  .container-faq h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .accordion {
+    background-color: var(--milk-color);
+    color: var(--dark-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: var(--transition-out);
+    margin-bottom: 10px;
+  }
+  
+  .accordion:hover,
+  .accordion.active {
+    background-color: var(--green-color);
+    color: var(--milk-color);
+    transition: var(--transition-in);
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: var(--white-color);
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+  }
+  
+  .panel p {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+  }
