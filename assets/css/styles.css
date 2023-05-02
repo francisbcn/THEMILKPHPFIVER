@@ -5,7 +5,7 @@
     margin: 0px;
     font-family: sans-serif, Helvetica, Arial;
 }
-
+/* 
 a:hover{
     color: #555555;
 }
@@ -31,18 +31,18 @@ td{
 
 .thumb{
     width: 100px;
-}
+} */
 
 /*CONTAINER*/
-#container{
+/* #container{
    width: 80%;
    margin: 0px auto;
    box-shadow: 0px 0px 10px gray;
    background: white;
-}
+} */
 
 /*HEADER*/
-
+/* 
 #header{
     height: 145px;
     background: #F0F0F0;
@@ -77,9 +77,9 @@ td{
 #logo a:hover{
     text-shadow: 0px 2px 1px #222222, 0px 0px 4px #01B1EA;
 }
-
+ */
 /*MENU*/
-#menu{
+/* #menu{
     clear:both;
     background: #222;
     color: white;
@@ -116,16 +116,16 @@ td{
 #menu a:hover{
     background: #01B1EA;
 }
-
+ */
 /*CONTENT*/
-#content{
+/* #content{
     margin: 0px auto;
     overflow: hidden;
     background: white;
-}
+} */
 
 /*BARRA LATERAL*/
-#lateral{
+/* #lateral{
     width: 22%;
     min-height: 500px;
     float: left;
@@ -164,10 +164,10 @@ td{
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
-}
+} */
 
 /*FORMS*/
-.form_container{
+/* .form_container{
     width: 50%;
 }
 
@@ -246,10 +246,10 @@ input[type="submit"],
 button{
     display:block;
     margin-top: 10px;
-}
+} */
 
 /*CENTRAL*/
-#central{
+/* #central{
     width: 72%;
     min-height: 500px;
     float: right;
@@ -267,10 +267,10 @@ button{
     margin-bottom: 20px;
     padding: 20px;
     padding-top: 0px;
-}
+} */
 
 /*PRODUCTOS*/
-.product{
+/* .product{
     width: 30%;
     float:left;
     margin-left: 10px;
@@ -345,10 +345,10 @@ button{
     width: 200px;
     text-align: center;
 }
-
+ */
 
 /*FOOTER*/
-#footer{
+/* #footer{
     clear: both;
     text-align: center;
     padding-top:10px;
@@ -356,10 +356,10 @@ button{
     color: white;
     background: #222222;
     border-top: 4px solid #01B1EA;
-}
+} */
 
 /*CARRITO*/
-.delete-carrito{
+/* .delete-carrito{
    width: 295px;
    float: left; 
 }
@@ -404,4 +404,4 @@ button{
     float: left;
     padding:2px;
     margin: 7px;
-}
+} */

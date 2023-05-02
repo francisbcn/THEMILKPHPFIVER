@@ -142,6 +142,47 @@
  
 }
 
+#user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.login-container {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-container ul li:last-child {
+  margin-right: 0;
+}
+
+.login-container ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.login-container ul li a:hover {
+  color: #4CAF50;
+}
+
 
 
 @keyframes bubble {
@@ -158,3 +199,4 @@
     transform: scale(2);
   }
 }
+

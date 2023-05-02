@@ -1,4 +1,8 @@
-<h1>Carrito de la compra</h1>
+<?php 
+if(isset($_SESSION['carrito']) && count($_SESSION['carrito']) >= 1) {
+    include('views/banners/ban_carrito.php');
+}
+?>
 
 <?php if(isset($_SESSION['carrito']) && count($_SESSION['carrito']) >= 1): ?>
 <table>
@@ -53,5 +57,5 @@
 </div>
 
 <?php else: ?>
-	<p>El carrito está vacio, añade algun producto</p>
+  <p class="empty-cart-msg">¡Tu carrito está vacío de leche! Llénalo de más leche y enorgullécete. => <a href="<?= base_url ?>tienda.php">#TIENDA</a></p>
 <?php endif; ?>

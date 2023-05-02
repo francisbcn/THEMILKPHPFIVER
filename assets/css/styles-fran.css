@@ -1,5 +1,3 @@
-/* @import url("assets/css/carrousel.css"); */
-
 :root {
   --green-color: #2ab0a1;
   --green-color-light: #b6fff6;
@@ -242,37 +240,54 @@ header .menus {
 
 
 /*  INICIO BANNER */
-.señal-a {
+.señal-a,
+.señal-b {
   width: 100%;
   display: block;
 }
+
 
 .señal-a h2 {
   letter-spacing: 5px;
   text-align: center;
   color: var(--milk-color);
-  margin: 20px 0px 0px;
   font-weight: 700;
   background-color: var(--dark-color);
   padding: 4.4rem 0;
   transition: var(--transition-out);
 }
 
-.señal-a .milkable {
+.señal-b h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  color: var(--milk-color);
+  /* margin: 1rem 0px 0px; */
+  font-weight: 700;
+  background-color: var(--dark-color);
+  padding: 1rem 0;
+  transition: var(--transition-out);
+  text-transform: uppercase;
+}
+
+.señal-a .milkable,
+.señal-b .milkable {
   color: var(--green-color);
 }
 
-.señal-a:hover .milkable {
+.señal-a:hover .milkable,
+.señal-b:hover .milkable  {
   color: var(--milk-color);
 }
 
-.señal-a:hover h2 {
+.señal-a:hover h2 ,
+.señal-b:hover h2{
   color: var(--milk-color);
   transition: var(--transition-in);
   cursor: pointer;
 }
 
-.señal-a:hover span.header__title {
+.señal-a:hover span.header__title,
+.señal-b:hover span.header__title  {
   color: var(--green-color);
   transition: var(--transition-in);
 }
@@ -536,7 +551,12 @@ button{
   display:block;
   margin-top: 10px;
 }
-
+.categoria-tittle {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-transform:uppercase;
+}
 
 /*CENTRAL*/
 #central{
@@ -638,7 +658,123 @@ button{
 
 
 /*CARRITO*/
-.delete-carrito{
+/* Estilo para la tabla del carrito */
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+table th {
+  background-color: #C5E5F0;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+}
+table td {
+  border: 1px solid #DDD;
+  padding: 10px;
+}
+table td img {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+/* Estilo para los botones */
+.button {
+  background-color: #EEA3C9;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: #F6B9D3;
+}
+.button-red {
+  background-color: #FF6B6B;
+}
+.button-red:hover {
+  background-color: #FF8F8F;
+}
+
+/* Estilo para el carrito vacío */
+.empty-cart {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+/* Estilo para el precio total */
+.total-carrito {
+  font-family: sans-serif;
+  font-size: 18px;
+  margin: 10px auto;
+  text-align: right;
+  width: 100%;
+}
+.total-carrito h3 {
+  display: inline-block;
+  margin: 0;
+}
+.total-carrito a {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Estilo para los controles de unidades */
+.updown-unidades {
+  display: flex;
+  justify-content: center;
+}
+.updown-unidades .button {
+  background-color: #C5E5F0;
+  border-radius: 5px;
+  border: none;
+  color: #444;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: 30px;
+}
+.updown-unidades .button:hover {
+  background-color: #EEE;
+}
+.empty-cart-msg {
+  font-size: 1.2em;
+  color: #444;
+  text-align: center;
+  margin: 6rem 0;
+}
+
+  
+  .empty-cart-msg a {
+  color: #f3727b;
+  text-decoration: none;
+  transition: var(--transition-in);
+  }
+  
+  .empty-cart-msg a:hover {
+    color:var(--gray-color);
+    transition: var(--transition-out);
+  }
+/* .delete-carrito{
  width: 295px;
  float: left; 
 }
@@ -683,7 +819,9 @@ button{
   float: left;
   padding:2px;
   margin: 7px;
-}
+} */
+
+
 
 /* ** // FOOTER STUFF // **  */
 

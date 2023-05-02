@@ -1,3 +1,10 @@
+<?php
+require_once 'models/categoria.php';
+require_once 'models/producto.php';
+require_once 'models/tallas.php';
+require_once 'models/colores.php';
+?>
+
 <h1>Gestión de productos</h1>
 
 <a href="<?= base_url ?>producto/crear" class="button button-small">
@@ -24,8 +31,8 @@
 		<th>NOMBRE</th>
 		<th>PRECIO</th>
 		<th>STOCK</th>
-		<th>TALLA</th>
-		<th>COLOR</th>
+	<!-- 	<th>TALLA</th>
+		<th>COLOR</th> -->
 		<th>ACCIONES</th>
 	</tr>
 	
@@ -36,8 +43,8 @@
 			<td><?= $pro->nombre; ?></td>
 			<td><?= $pro->precio; ?></td>
 			<td><?= $pro->stock; ?></td>
-			<td><?= $pro->talla; ?></td>
-			<td><?= $pro->color; ?></td>
+<!-- 			<td><?= $pro->talla; ?></td>
+			<td><?= $pro->color; ?></td> -->
 			<td>
 				<a href="<?= base_url ?>producto/editar&id=<?= $pro->id ?>" class="button button-gestion">Editar</a>
 				<a href="<?= base_url ?>producto/eliminar&id=<?= $pro->id ?>" class="button button-gestion button-red">Eliminar</a>

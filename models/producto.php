@@ -11,8 +11,8 @@ class Producto{
 	private $oferta;
 	private $fecha;
 	private $imagen;
-	private $talla = "";
-	private $color = "";
+	private $talla;
+	private $color ;
 /* 	private $bordado; */
 
 

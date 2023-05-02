@@ -27,6 +27,7 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 	<link rel="stylesheet" href="<?= base_url ?>assets/css/faq.css">
 	<link rel="stylesheet" href="<?= base_url ?>assets/css/somos.css">
 	<link rel="stylesheet" href="<?= base_url ?>assets/css/users.css">
+	<link rel="stylesheet" href="<?= base_url ?>assets/css/envios.css">
 	<!-- 	<?php if ($var == "contacto.php") //cargar stilo contacto.css 
 				?> -->
 	<link rel="stylesheet" href="<?= base_url ?>assets/css/styles-fran.css">

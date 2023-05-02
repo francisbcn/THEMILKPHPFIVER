@@ -16,30 +16,42 @@
 	<div class="footer-cont container">
 		<nav class="foot-nav1">
 			<ul>
+
+			
 				<li>
-					<a href="#"><i id="boton" class="fa-solid fa-address-card" alt="acerca de" title="acerca de"></i> LOGIN</a>
+					<a href="<?= base_url ?>faq.php"><i class="fa-solid fa-circle-question" alt="preguntas frecuentes" title="preguntas frecuentes"></i> FAQ</a>
 				</li>
 				<li>
-					<a href="#"><i class="fa-solid fa-circle-question" alt="preguntas frecuentes" title="preguntas frecuentes"></i> FAQ</a>
-				</li>
-				<li>
-					<a href="#"><i class="fa-solid fa-truck-fast" alt="envios" title="mis envios"></i> ENVIOS </a>
+					<a href="<?= base_url ?>envios.php"><i class="fa-solid fa-truck-fast" alt="envios" title="mis envios"></i> ENVIOS </a>
 				</li>
 				<li>
 					<a href="#"><i class="fa-solid fa-file-contract" alt="terminos y condicones the milk barcelona" title="terminos y condicones the milk barcelona"></i></i> TERMINOS & CONDICIONES </a>
 				</li>
 				<li>
 					<a href="#"><i class="fa-solid fa-cart-arrow-down" alt="carrito the milk Barcelona" title="carrito the milk barcelona"></i> CARRITO</a>
+				</li>	
+				<li>
+					<?php if (!isset($_SESSION['identity'])) : ?>
+						<a href="<?= base_url ?>usuario.php">
+
+							<i id="boton" class="fa-solid fa-address-card" alt="acerca de" title="acerca de"></i>
+
+							LOGIN
+						</a>
+					<?php else : ?>
+						<a href="<?= base_url ?>usuario.php"><?= $_SESSION['identity']->nombre ?> <?= $_SESSION['identity']->apellidos ?></a> <br>
+						<a href="<?= base_url ?>usuario/logout">Cerrar sesión</a>
+					<?php endif; ?>
 				</li>
 			</ul>
 		</nav>
 		<nav class="foot-nav2 container">
 			<ul>
-				<li><a href="index.html">INICIO</a></li>
-				<li><a href="nuevo.html">TIENDA</a></li>
-				<li><a href="nuevo.html">SOMOS</a></li>
-				<li><a href="contacto.html">CONTACTO</a></li>
-				<li><a href="contacto.html">FAQ</a></li>
+				<li><a href="<?= base_url ?>">INICIO</a></li>
+				<li><a href="<?= base_url ?>tienda.php">#TIENDA</a></li>
+				<li><a href="<?= base_url ?>somos.php">SOMOS</a></li>
+				<li><a href="<?= base_url ?>contacto.php">CONTACTO</a></li>
+				<li><a href="<?= base_url ?>faq.php">FAQ</a></li>
 			</ul>
 		</nav>
 		<div>
@@ -49,9 +61,9 @@
 		</div>
 	</div>
 	<div class="derechos">
-		<p> <span> &#169; 2018 - 2022 The Milk Barcelona By Francis Pama</span></p>
+    <p><span id="currentYear">&#169; The Milk Barcelona By Francis Pama</span></p>
+</div>
 
-	</div>
 </footer>
 </div>
 <script type="module" src="<?= base_url ?>assets/js/jquery.min.js"></script>
@@ -61,6 +73,10 @@
 <script type="module" src="<?= base_url ?>assets/js/shopping-cart.js"></script>
 <script type="module" src="<?= base_url ?>assets/js/producto-intento.js"></script>
 <script type="module" src="<?= base_url ?>assets/js/acordion.js"></script>
+<script type="module" src="<?= base_url ?>assets/js/time.js"></script>
+
+
+
 
 <!-- <script>
   document.querySelector('.header__logged-in a').addEventListener('click', function() {

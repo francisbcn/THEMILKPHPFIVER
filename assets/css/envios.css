@@ -1,0 +1,137 @@
+:root {
+    --green-color: #2AB0A1;
+    --milk-color: #fcfcfc;
+    --dark-color: #212026;
+    --white-color: #ffffff;
+    --transition-out: all 0.2s ease-in-out;
+    --transition-in: all 0.2s ease-in;
+    --font: 'Roboto', sans-serif, 'Open Sans';
+  }
+
+  
+/* Estilos para el formulario */
+.envios-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.envios-form label {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--dark-color);
+  margin-bottom: 5px;
+}
+
+.envios-form select {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--green-color);
+  font-size: 16px;
+  width: 100%;
+}
+
+.envios-form input[type=text],
+.envios-form input[type=email] {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--green-color);
+  font-size: 16px;
+  width: 100%;
+}
+
+.envios-form input[type=submit] {
+  background-color: var(--green-color);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition-out);
+}
+
+.envios-form input[type=submit]:hover {
+  background-color: var(--dark-color);
+  transition: var(--transition-in);
+}
+
+/* Estilos para los encabezados */
+.envio-title {
+  font-size: 1.3rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.envio-text2 {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+/* Estilos para los párrafos */
+.envios-form p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.envio-text {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin: 1rem 0;
+}
+
+.envio-cont {
+  padding: 20px;
+}
+
+.envio-cont p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.envio-cont ul {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+.envio-cont h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.envio-cont strong {
+  color: #b31b1b;
+}
+
+.envio-cont li {
+  margin-bottom: 1rem;
+  list-style:circle;
+}
+
+#emoticons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#emoticons-container span {
+  font-size: 50px;
+  margin: 0 10px;
+}

@@ -1,14 +1,14 @@
-<?php 
-    include('views/banners/ban_producto.php');
-	require_once 'models/tallas.php';
-	require_once 'models/colores.php';
+<?php
+include('views/banners/ban_producto.php');
+require_once 'models/tallas.php';
+require_once 'models/colores.php';
 ?>
 <?php if (isset($product)) : ?>
 
-    
+
     <div class='container2'>
         <div class='background-element' id='background-element'></div>
-      <!--   <div class='highlight-window' id='product-img'>
+        <!--   <div class='highlight-window' id='product-img'>
             <div class='highlight-overlay' id='highlight-overlay'></div>
         </div> -->
         <section class='window'>
@@ -48,16 +48,34 @@
                                     <div>40</div>
                                     <div>42</div>
                                     <div>22</div>
-                                </div>  
+                                </div>
                             </section>
 
-							
 
                         </section>
-						<div>
-						<a href="<?= base_url ?>carrito/add&id=<?= $product->id ?>" class="button">Añadir al Carrito</a>
-						</div>
-	
+
+                        <label for="color">Color</label>
+                        <?php $color_sel = Utils::showColor(); ?>
+                        <select name="color">
+                            <?php while ($cat = $color_sel->fetch_object()) : ?>
+                                <option value="<?= $cat->id ?>" <?= (isset($pro) && is_object($pro) && isset($pro->color) && $pro->color == $cat->id) ? 'selected' : '' ?>>
+                                    <?= $cat->nombre ?>
+                                </option>
+                            <?php endwhile; ?>
+                        </select>
+                        <label for="talla">Talla</label>
+                        <?php $tallas_sel = Utils::showTallas(); ?>
+                        <select name="talla">
+                            <?php while ($cat = $tallas_sel->fetch_object()) : ?>
+                                <option value="<?= $cat->id ?>" <?= (isset($pro) && is_object($pro) && isset($pro->talla) && $pro->talla == $cat->id) ? 'selected' : '' ?>>
+                                    <?= $cat->nombre ?>
+                                </option>
+                            <?php endwhile; ?>
+                        </select>
+                        <div>
+                            <a href="<?= base_url ?>carrito/add&id=<?= $product->id ?>" class="button">Añadir al Carrito</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
