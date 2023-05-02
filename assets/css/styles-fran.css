@@ -10,9 +10,7 @@
   --transition-in: all 0.2s ease-in;
   --font: "Roboto", sans-serif, "Open Sans";
 }
-
 /* *  // GLOBALS   //  */
-
 *,
 *::after,
 *::before {
@@ -20,7 +18,6 @@
   margin: 0px;
   padding: 0px;
 }
-
 html {
   width: 100vw;
   height: 100vh;
@@ -28,8 +25,6 @@ html {
   font-size: 1rem;
   scroll-behavior: smooth;
 }
-
-
 body {
   font-family: var(--font);
   background-color: var(--milk-color);
@@ -37,20 +32,17 @@ body {
   font-family: var(--font);
   transition: var(--transition);
 }
-
 a {
   text-decoration: none;
   color: var(--green);
   transition: var(--transition);
   }
-
 a:hover,
 a:active,
 a:focus {
   color: var(--green-color);
   transition: color var(--transition) ease-in-out;
 }
-
 button,
 input[type="submit"] {
   background-color: var(--green-color);
@@ -62,43 +54,16 @@ input[type="submit"] {
   cursor: pointer;
   transition: background-color var(--transition) ease-in-out;
 }
-
 button:hover,
 input[type="submit"]:hover {
   background-color: #2ab0a1cc;
 }
-
 .alert_green{
   color:green;
 }
-
 .alert_red{
   color:red;
 }
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-li,
-a {
-  font-family: var(--font);
-} */
-
-/* *  // GENERALS //  */
-
-
-/* body a {
-  text-decoration: none;
-  color: black;
-} */
-/* 
-.container {
-  width: 100%;
-}  
- */
 
 /*CONTAINER*/
 #container{
@@ -107,31 +72,38 @@ a {
   box-shadow: 0px 0px 10px gray;
   background: white;
 }
-
-
 /*CONTENT*/
 #content{
   margin: 0px auto;
   overflow: hidden;
   background: white;
 }
-
-
 /* *  // HEADER  //  */
 
+.menus {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
 header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   background-color: #fcfcfc;
+  
 }
-
 .header__etsy {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
   padding: 0.4rem 1rem;
   font-size: 14px;
@@ -140,20 +112,15 @@ header {
   background-color: #212026;
   color: #fcfcfc;
 }
-
 .header__etsy .etsy-nombre{
   color: var(--green-color-light);
   transition: var(--transition-out);
   cursor: pointer;
-  
 }
-
 .header__etsy a:hover {
   color: var(--milk-color);
   transition: var(--transition-in);
-  
 }
-
 header picture {
   display: flex;
   align-items: center;
@@ -162,56 +129,44 @@ header picture {
   margin: 30px 0px;
   background-color: #fcfcfc;
 }
-
 header picture img {
   width: 100px;
 }
-
 .header__etsy h1 {
   display: none;
 }
-
 header .menus {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin: 12px 0px;
 }
-
 .menus .nav-1 {
   display: flex;
   align-items: center;
   margin-left: 15px;
 }
-
 .menus .nav-2 {
   display: flex;
   align-items: center;
   margin-right: 15px;
 }
-
 .menus .nav-2 ul,
 .menus .nav-1 ul {
   display: flex;
   list-style: none;
   gap: 1.5rem;
 }
-
 .milk-cont {
   width: 100%;
   background-color: #212026;
 }
-
-
-
 /*  menus catgorias : */
-
  #menu2 {
   background-color: #f2f2f2;
   border-radius: 5px;
   padding: 10px;
 }
-
 #menu2 ul {
   list-style: none;
   margin: 0;
@@ -219,11 +174,9 @@ header .menus {
   display: flex;
   justify-content: space-between;
 }
-
 #menu2 li {
   margin-right: 20px;
 }
-
 #menu2 a {
   color: #333;
   text-decoration: none;
@@ -231,22 +184,15 @@ header .menus {
   text-transform: uppercase;
   transition: color 0.3s ease-in-out;
 }
-
 #menu2 a:hover {
   color: #ff6600;
 }
-
-
-
-
 /*  INICIO BANNER */
 .señal-a,
 .señal-b {
   width: 100%;
   display: block;
 }
-
-
 .señal-a h2 {
   letter-spacing: 5px;
   text-align: center;
@@ -256,76 +202,59 @@ header .menus {
   padding: 4.4rem 0;
   transition: var(--transition-out);
 }
-
 .señal-b h2 {
   letter-spacing: 5px;
   text-align: center;
   color: var(--milk-color);
-  /* margin: 1rem 0px 0px; */
   font-weight: 700;
   background-color: var(--dark-color);
   padding: 1rem 0;
   transition: var(--transition-out);
   text-transform: uppercase;
 }
-
 .señal-a .milkable,
 .señal-b .milkable {
   color: var(--green-color);
 }
-
 .señal-a:hover .milkable,
 .señal-b:hover .milkable  {
   color: var(--milk-color);
 }
-
 .señal-a:hover h2 ,
 .señal-b:hover h2{
   color: var(--milk-color);
   transition: var(--transition-in);
   cursor: pointer;
 }
-
 .señal-a:hover span.header__title,
 .señal-b:hover span.header__title  {
   color: var(--green-color);
   transition: var(--transition-in);
 }
-
 .cont-hecho {
   width: 100%;
   text-align: center;
 }
-
 .cont-hecho h2 {
   font-weight: 400;
   margin: 40px 0px;
   letter-spacing: 3px;
 }
-
 /* ** // PACK IMAGES MAIN STUFF // **  */
-
 .fotos-cont {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .art-fotos {
-  /* font-family: 'Raleway', Arial, sans-serif; */
-  /* position: relative;
-  overflow: hidden; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   margin: 10px;
   min-width: 220px;
   max-width: 310px;
   width: 100%;
-
-  /* color: #ff0000; */
   text-align: center;
-  /* background-color: #ffffff; */
   line-height: 1.6em;
 }
 .art-fotos * {
@@ -334,7 +263,6 @@ header .menus {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
-
 .art-fotos .image {
   position: relative;
 }
@@ -774,53 +702,6 @@ table td img {
     color:var(--gray-color);
     transition: var(--transition-out);
   }
-/* .delete-carrito{
- width: 295px;
- float: left; 
-}
-
-.button-delete{
-  display: block;
-  float: left;
-  width: 100px;
-}
-
-.button-carrito{
-  width: 70px;
-  margin: 0px auto;
-  text-align: center;
-}
-
-.total-carrito{
- width: 295px;
- float: right; 
-}
-
-.total-carrito h3{
-  display: block;
-  float:left;
-  margin-top: 5px;
-}
-
-.button-pedido{
-  display: block;
-  float: right;
-  width: 100px;
-}
-
-.updown-unidades{
-  width: 80px;
-  margin: 0px auto;
-}
-
-.updown-unidades .button{
-  display: block;
-  width: 20px;
-  float: left;
-  padding:2px;
-  margin: 7px;
-} */
-
 
 
 /* ** // FOOTER STUFF // **  */
@@ -912,6 +793,166 @@ footer span {
   margin: 30px 0px;
 }
 
+
+/* SIDENAV */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 1rem 1rem 1rem 2rem;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-top: 2rem;
+}
+
+.sidenav a:hover {
+  color:var(--rojo);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin: 1rem;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+#burguer {
+  display: none;
+  padding: 0.3rem;
+}
+
+
+
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+  /*CONTAINER*/
+  #container{
+    width: 100%;
+    margin: 0;
+    
+  }
+  /*HEADER*/
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-img {
+    margin: auto;
+  }
+  
+  nav.nav-2 {
+    margin-left: auto;
+  }
+  .header__etsy {
+    display: none;
+  }
+  .menus .nav-1 ul,
+  .menus .nav-2 ul {
+    flex-direction: column;
+  }
+  .menus .nav-1 ul li,
+  .menus .nav-2 ul li {
+    margin: 5px 0;
+  }
+  .header__etsy {
+    padding: 0.2rem;
+    font-size: 12px;
+    word-spacing: 3px;
+  }
+  header picture {
+    margin: 20px 0px;
+  }
+  header picture img {
+    width: 80px;
+  }
+
+    /* SIDENAV */
+
+    .sidenav {
+      padding-top: 15px;
+    }
+  
+    .sidenav a {
+      font-size: 18px;
+    }
+  
+    #burguer {
+      display: flex;
+    }
+
+   #menu-muestra{
+    display: none;
+   }
+}
+
+/* Tablets and small desktops */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /*CONTAINER*/
+  #container{
+    width: 90%;
+  }
+      /* SIDENAV */
+
+      .sidenav {
+        padding-top: 15px;
+      }
+    
+      .sidenav a {
+        font-size: 18px;
+      }
+    
+      #burguer {
+        display: flex;
+      }
+  
+     #menu-muestra{
+      display: none;
+     }
+}
+
+/* Large desktops */
+@media only screen and (min-width: 1025px) {
+  /*CONTAINER*/
+  #container{
+    width: 80%;
+  }
+  /*HEADER*/
+
+  header picture {
+    margin: 40px 0px;
+  }
+  header picture img {
+    width: 120px;
+  }
+  
+}
+
+/* 
 @media (max-width: 850px) {
   body {
     background: #fff;
@@ -1011,7 +1052,7 @@ footer span {
 }
 .container > *:first-child {
   grid-column: 1/-1;
-}
+} */
 
 /* .controls-info {
   max-width: max-content;

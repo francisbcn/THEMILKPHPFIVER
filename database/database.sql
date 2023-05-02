@@ -133,6 +133,12 @@ VALUES
 (10010, 3,'Pantalón Vaquero Slim', 'Este pantalón corto de mezclilla 100% algodón de alta calidad está hecho a la perfección para hombres que buscan comodidad y estilo. slim fit y tecnología Push-Up.', 'Pantalón corto de mezclilla 100% algodón de alta calidad para hombres. Diseño slim fit y tecnología Push-Up para mayor comodidad y estilo.', 40.00, 10, '20€', '2023-01-15', '', 1, 1),
 (10011, 1, 'Camiseta Tirantes Bordado', 'Enciende la noche con nuestra camiseta de tirantes con bordado que alumbra en la oscuridad. Disponible en una gama de colores vivos y múltiples diseños divertidos como "Flamingo", "Piña", "Tucán" y "Cactus", esta cómoda y versátil camiseta garantiza llamar la atención donde quiera que vayas. Además, su tecnología reflectiva en el sol se recarga con los rayos UV para generar un brillo luminoso que hará que te destaques en cualquier lugar.', 'Camiseta de tirantes con bordado que alumbra en la oscuridad y tecnología reflectiva en el sol. Disponible en múltiples diseños divertidos.', 25.00, 10, '15€', '2023-01-15', '', 1, 1);
 
+-- Insertar una nueva línea de pedido sin el valor del bordado
+INSERT INTO lineas_pedidos (pedido_id, producto_id, unidades, precio) VALUES (1, 1, 2, 10.99);
+
+-- Consultar el dato del bordado de un pedido haciendo un JOIN con la tabla productos
+SELECT lp.*, p.bordado FROM lineas_pedidos lp INNER JOIN productos p ON lp.producto_id = p.id WHERE lp.pedido_id = 1;
+
 /* 
 
 -- Crear tabla de colores

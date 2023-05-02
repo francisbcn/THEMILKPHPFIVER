@@ -74,7 +74,7 @@
 <script type="module" src="<?= base_url ?>assets/js/producto-intento.js"></script>
 <script type="module" src="<?= base_url ?>assets/js/acordion.js"></script>
 <script type="module" src="<?= base_url ?>assets/js/time.js"></script>
-
+<script type="module" src="<?= base_url ?>assets/js/sidenav.js"></script>
 
 
 
