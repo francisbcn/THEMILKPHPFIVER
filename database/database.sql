@@ -1,4 +1,4 @@
--- Active: 1675263813408@@127.0.0.1@3306@bolt
+-- Active: 1682784798708@@127.0.0.1@3306@phpmyadmin
 
 
 DROP DATABASE IF EXISTS tienda_master;

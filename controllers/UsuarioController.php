@@ -38,7 +38,11 @@ class usuarioController{
 		}else{
 			$_SESSION['register'] = "failed";
 		}
+		// Utiliza ob_start() para almacenar la salida en un buffer antes de enviarla
+		ob_start();
 		header("Location:".base_url.'usuario/registro');
+		// Usa ob_end_clean() para borrar la salida almacenada en el buffer
+		ob_end_clean();
 	}
 	
 	public function login(){
@@ -63,7 +67,11 @@ class usuarioController{
 			}
 		
 		}
+		// Utiliza ob_start() para almacenar la salida en un buffer antes de enviarla
+		ob_start();
 		header("Location:".base_url);
+		// Usa ob_end_clean() para borrar la salida almacenada en el buffer
+		ob_end_clean();
 	}
 	
 	public function logout(){
@@ -75,7 +83,11 @@ class usuarioController{
 			unset($_SESSION['admin']);
 		}
 		
+		// Utiliza ob_start() para almacenar la salida en un buffer antes de enviarla
+		ob_start();
 		header("Location:".base_url);
+		// Usa ob_end_clean() para borrar la salida almacenada en el buffer
+		ob_end_clean();
 	}
 	
-} // fin clase
+}

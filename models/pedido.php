@@ -47,14 +47,14 @@ class Pedido{
 	function getEstado() {
 		return $this->estado;
 	}
-	function getTalla() {
+/* 	function getTalla() {
 		return $this->talla;
 	}
 
 
 	function getColor() {
 		return $this->color;
-	}
+	} */
 
 /* 	function getBordado() {
 		return $this->bordado;
@@ -97,14 +97,14 @@ class Pedido{
 	}
 
 
-	function setTalla($talla) {
+/* 	function setTalla($talla) {
 		$this->talla = (int) $talla;
 	}
 	
 	function setColor($color) {
 		$this->color = (int) $color;
 	}
-	
+	 */
 
 /* 	function setBordado($bordado) {
 		$this->bordado = $bordado;
@@ -163,7 +163,7 @@ class Pedido{
 	}
 	
 	public function save(){
-		$sql = "INSERT INTO pedidos VALUES(NULL, {$this->getUsuario_id()}, '{$this->getProvincia()}', '{$this->getLocalidad()}', '{$this->getDireccion()}', {$this->getCoste()}, {$this->getTalla()}, {$this->getColor()}, 'confirm', CURDATE(), CURTIME());";
+		$sql = "INSERT INTO pedidos VALUES(NULL, {$this->getUsuario_id()}, '{$this->getProvincia()}', '{$this->getLocalidad()}', '{$this->getDireccion()}', {$this->getCoste()},'confirm', CURDATE();";
 		$save = $this->db->query($sql);
 		
 		$result = false;

@@ -2,14 +2,13 @@
 require_once('models/Consulta.php');
 require_once('models/BaseMysql.php');
 
-
 $bd = new BaseMysql();
 $consulta = new Consulta();
 
 $productos = [];
 
 if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
-	$productos = $consulta->buscarProducto($bd, 'nombre', $_GET['busqueda']);
+    $productos = $consulta->buscarProducto($bd, 'nombre', $_GET['busqueda']);
 }
 ?>
 <!DOCTYPE HTML>
@@ -60,22 +59,16 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 			</section>
 
 
-			<!-- 			<picture class="container">
-				<a href="<?= base_url ?>">
-					<img class="header-img" src="<?= base_url ?>assets/img/the-milk-barcelona-logo.svg" alt="Hecho en Barcelona" title="The Milk Barcelona tienda LGTBIQ+">
-				</a>
-			</picture> -->
-
 			<picture class="container">
 				<a href="<?= base_url ?>">
-					<source media="(min-width: 1025px)" src="<?= base_url ?>assets/img/the-milk-barcelona-logo.svg">
-					<source media="(min-width: 601px) and (max-width: 1024px)" src="<?= base_url ?>assets/img/the-milk-barcelona-logo.svg">
 					<img class="header-img" src="<?= base_url ?>assets/img/the-milk-barcelona-logo.svg" alt="Hecho en Barcelona" title="The Milk Barcelona tienda LGTBIQ+">
 				</a>
 			</picture>
+			
 
-			<div class="menus contenedor">
-				<nav class="nav-1" id="menu-muestra">
+
+			<div class="menus">
+				<nav class="nav-1">
 					<ul>
 						<li><a href="<?= base_url ?>">INICIO</a></li>
 						<li><a href="<?= base_url ?>tienda.php">#TIENDA</a></li>
@@ -84,28 +77,16 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 						<li><a href="<?= base_url ?>faq.php">FAQ</a></li>
 					</ul>
 				</nav>
-				<div id="burguer" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</div>
-
-				<nav class=" sidenav" id="mySidenav">
-					<ul>
-						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-						<li><a class="activo" href="<?= base_url ?>">INICIO</a></li>
-						<li><a href="<?= base_url ?>tienda.php">#TIENDA</a></li>
-						<li><a href="<?= base_url ?>somos.php">SOMOS</a></li>
-						<li><a href="<?= base_url ?>contacto.php">CONTACTO</a></li>
-						<li><a href="<?= base_url ?>faq.php">FAQ</a></li>
-					</ul>
-				</nav>
-
 				<nav class="nav-2">
 					<ul>
 						<li><a href="<?= base_url ?>usuario.php"><i class="fa-regular fa-circle-user" alt="Iniciar sesion" title="user the milk barcelona"></i></a></li>
+
 						<?php $stats = Utils::statsCarrito(); ?>
 
 						<li><a href="<?= base_url ?>carrito/index"><i class="fa-solid fa-cart-arrow-down" alt="carrito the milk Barcelona" title="carrito the milk barcelona"></i></a></li>
 
 						<li><a href="<?= base_url ?>busqueda.php"><i class="fa-solid fa-magnifying-glass" alt="busqueda the milk Barcelona" title="busqueda the milk barcelona"></i></a></li>
-
+	
 					</ul>
 				</nav>
 			</div>
@@ -116,3 +97,14 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 
 
 		<div id="content">
+
+
+
+
+
+
+
+
+<!-- 	//////////////////////// -->
+
+

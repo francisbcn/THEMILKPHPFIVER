@@ -17,7 +17,7 @@
 		<nav class="foot-nav1">
 			<ul>
 
-			
+
 				<li>
 					<a href="<?= base_url ?>faq.php"><i class="fa-solid fa-circle-question" alt="preguntas frecuentes" title="preguntas frecuentes"></i> FAQ</a>
 				</li>
@@ -29,7 +29,7 @@
 				</li>
 				<li>
 					<a href="#"><i class="fa-solid fa-cart-arrow-down" alt="carrito the milk Barcelona" title="carrito the milk barcelona"></i> CARRITO</a>
-				</li>	
+				</li>
 				<li>
 					<?php if (!isset($_SESSION['identity'])) : ?>
 						<a href="<?= base_url ?>usuario.php">
@@ -45,6 +45,7 @@
 				</li>
 			</ul>
 		</nav>
+		
 		<nav class="foot-nav2 container">
 			<ul>
 				<li><a href="<?= base_url ?>">INICIO</a></li>
@@ -61,8 +62,8 @@
 		</div>
 	</div>
 	<div class="derechos">
-    <p><span id="currentYear">&#169; The Milk Barcelona By Francis Pama</span></p>
-</div>
+		<p><span id="currentYear">&#169; The Milk Barcelona By Francis Pama</span></p>
+	</div>
 
 </footer>
 </div>

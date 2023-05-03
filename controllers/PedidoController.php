@@ -14,13 +14,14 @@ class pedidoController{
 			$provincia = isset($_POST['provincia']) ? $_POST['provincia'] : false;
 			$localidad = isset($_POST['localidad']) ? $_POST['localidad'] : false;
 			$direccion = isset($_POST['direccion']) ? $_POST['direccion'] : false;
-			$talla = isset($_POST['talla']) ? $_POST['talla'] : false;
-			$color = isset($_POST['color']) ? $_POST['color'] : false;
+		/* 	$talla = isset($_POST['talla']) ? $_POST['talla'] : false;
+			$color = isset($_POST['color']) ? $_POST['color'] : false; */
 			
 			$stats = Utils::statsCarrito();
 			$coste = $stats['total'];
 				
-			if($provincia && $localidad && $direccion&& $talla && $color){
+			/* if($provincia && $localidad && $direccion&& $talla && $color){ */
+				if($provincia && $localidad && $direccion){
 				// Guardar datos en bd
 				$pedido = new Pedido();
 				$pedido->setUsuario_id($usuario_id);
@@ -28,8 +29,8 @@ class pedidoController{
 				$pedido->setLocalidad($localidad);
 				$pedido->setDireccion($direccion);
 				$pedido->setCoste($coste);
-				$pedido->setTalla($talla);
-				$pedido->setColor($color);
+			/* 	$pedido->setTalla($talla);
+				$pedido->setColor($color); */
 				
 				$save = $pedido->save();
 				
