@@ -27,7 +27,7 @@
 
   <section>
     <h2>Nombre y Logo</h2>
-    <img src="/media/img/THE-MILK-NOMBRE-Y-LOGO.jpg" alt="Nombre y logo de The Milk Barcelona">
+    <img src="<?= base_url ?>/assets/img/about/web-logo-the-milk.jpg" alt="Nombre y logo de The Milk Barcelona">
     <p>El nombre The Milk tiene una historia divertida y única detrás. Durante nuestra reflexión en la playa, la idea de la leche como algo importante e indispensable para la vida, pero con un toque sensual y humorístico, nos inspiró. Además, el logotipo de The Milk, que representa a dos hombres tomados de la mano, refleja nuestra visión de una moda sin prejuicios e inclusiva.</p>
   </section>
 

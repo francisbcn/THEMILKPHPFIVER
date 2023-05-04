@@ -60,31 +60,3 @@
     </section>
   </form>
 </div>
-
-
-<!-- 
-            <form method="post" name="firstContact" action="">
-                  <fieldset class="form-group">
-                        <label for="email">Dirección de email</label>
-                        <input type="text" class="form-control" id="email" name="email" value="{{::email::}}" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}">
-                        <div class="valid-feedback">email OK</div>
-                        <div class="invalid-feedback"> email no correcto</div>
-                  </fieldset>
-                  <fieldset class="form-group">
-                        <label for="asunto">Asunto</label>
-                        <input type="text" class="form-control" id="asunto" name="asunto" value="{{::asunto::}}" pattern="[A-Za-zÀ-ÿ-\u00f1\u00d1\s]{5,250}">
-                        <div class="valid-feedback">Asunto OK</div>
-                        <div class="invalid-feedback"> asunto no correcto</div>
-                        <small id="mostra2" class="text-muted"></small>
-                  </fieldset>
-                  <fieldset class="form-group">
-                        <label for="contenido">¿Qué te gustaría preguntarnos?</label>
-                        <textarea class="form-control" id="contenido" name="contenido" rows="3">{{::contenido::}}</textarea>
-
-                        <div class="valid-feedback"> OK</div>
-                        <div class="invalid-feedback"> No correcto</div>
-                  </fieldset>
-                  <button type="submit" name="enviar" id="enviar" class="btn btn-primary">Enviar</button>
-            </form>
-
- -->

@@ -177,6 +177,205 @@ padding: 0 2rem;
 }
 
 
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Welcome section */
+  .welcome-section {
+  padding: 50px 0;
+  }
+  
+  .welcome-text h1 {
+  font-size: 2.5em;
+  }
+  
+  .welcome-text p {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-top: 10px;
+  }
+  
+  /* Sostenibilidad section */
+  section:nth-of-type(2) {
+  padding: 50px 0;
+  }
+  
+  section:nth-of-type(2) h2 {
+  font-size: 2.5em;
+  }
+  
+  section:nth-of-type(2) img {
+  width: 80%;
+  margin: 30px 0;
+  }
+  
+  section:nth-of-type(2) p {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 10px;
+  padding: 0 1rem;
+  }
+  
+  /* Orígenes section */
+  section:nth-of-type(3) {
+  padding: 50px 0;
+  }
+  
+  section:nth-of-type(3) h2 {
+  font-size: 2.5em;
+  }
+  
+  section:nth-of-type(3) img {
+  width: 100%;
+  margin: 30px 0;
+  }
+  
+  section:nth-of-type(3) p {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-top: 10px;
+  padding: 0 1rem;
+  }
+  
+  /* Nombre y Logo section */
+  section:nth-of-type(4),
+  section:nth-of-type(5),
+  section:nth-of-type(6),
+  section:nth-of-type(7) {
+  padding: 50px 0;
+  }
+  
+  section:nth-of-type(4) h2,
+  section:nth-of-type(5) h2,
+  section:nth-of-type(6) h2,
+  section:nth-of-type(7) h2{
+  font-size: 2.5em;
+  }
+  
+  section:nth-of-type(4) img,
+  section:nth-of-type(5) img,
+  section:nth-of-type(6) img,
+  section:nth-of-type(7) img {
+  width: 100%;
+  margin: 30px 0;
+  }
+  
+  section:nth-of-type(4) p,
+  section:nth-of-type(5) p,
+  section:nth-of-type(6) p ,
+  section:nth-of-type(7) p{
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-top: 10px;
+  padding: 0 1rem;
+  }
+  
+  /* Somos Banner */
+  .somos-banner h2 {
+  font-size: 2em;
+  margin: 10px 0px 0px;
+  padding: 3rem 0;
+  }
+  }
+  
+  @media only screen and (max-width: 600px) {
+  /* Welcome section */
+  .welcome-section {
+  padding: 30px 0;
+  }
+  
+  .welcome-text h1 {
+  font-size: 2em;
+  }
+  
+  .welcome-text p {
+  font-size: 1em;
+  line-height: 1em;
+  margin-top: 10px;
+  }
+  
+  /* Sostenibilidad section */
+  section:nth-of-type(2) {
+  padding: 30px 0;
+  }
+  
+  section:nth-of-type(2) h2 {
+  font-size: 2em;
+  }
+  
+  section:nth-of-type(2) img {
+  width: 100%;
+  margin: 30px 0;
+  }
+  
+  section:nth-of-type(2) p {
+  font-size: 1em;
+  line-height: 1em;
+  margin: 10px;
+  padding: 0 1rem;
+  }
+  
+  /* Orígenes section */
+  section:nth-of-type(3) {
+  padding: 30px 0;
+  }
+  
+  section:nth-of-type(3) h2 {
+  font-size: 2em;
+  }
+  
+  section:nth-of-type(3) img {
+  width: 100%;
+  margin: 30px 0;
+  }
+  
+  section:nth-of-type(3) p {
+  font-size: 1em;
+  line-height: 1em;
+  margin-top: 10px;
+  padding: 0 1rem;
+  }
+  
+  /* Nombre y Logo section */
+  section:nth-of-type(4),
+  section:nth-of-type(5),
+  section:nth-of-type(6),
+  section:nth-of-type(7) {
+  padding: 30px 0;
+  }
+  
+  section:nth-of-type(4) h2,
+  section:nth-of-type(5) h2,
+  section:nth-of-type(6) h2,
+  section:nth-of-type(7) h2{
+  font-size: 2em;
+  }
+  
+  section:nth-of-type(4) img,
+  section:nth-of-type(5) img,
+  section:nth-of-type(6) img,
+  section:nth-of-type(7) img {
+  width: 100%;
+  margin: 30px 0;
+  }
+  
+  section:nth-of-type(4) p,
+  section:nth-of-type(5) p,
+  section:nth-of-type(6) p ,
+  section:nth-of-type(7) p{
+  font-size: 1em;
+  line-height: 1em;
+  margin-top: 10px;
+  padding: 0 1rem;
+  }
+  
+  /* Somos Banner */
+  .somos-banner h2 {
+  font-size: 2em;
+  margin: 10px 0px 0px;
+  padding: 2rem 0;
+  }
+  }
+
+
 /* .somos-banner {
   width: 100%;
   display: block;
@@ -251,46 +450,3 @@ padding: 0 2rem;
 
 
 
-/* Media queries */
-@media screen and (max-width: 768px) {
-.welcome-image {
-width: 80%;
-}
-
-section:nth-of-type(2) img,
-section:nth-of-type(3) img,
-section:nth-of-type(4) img {
-width: 80%;
-}
-}
-
-@media screen and (max-width: 480px) {
-section:nth-of-type(2) h2,
-section:nth-of-type(3) h2,
-section:nth-of-type(4) h2,
-section:nth-of-type(5) h2,
-section:nth-of-type(6) h2 {
-font-size: 2.5em;
-width: 100%;
-}
-
-.welcome-text h2 {
-font-size: 2.5em;
-}
-
-.welcome-text p {
-font-size: 1.2em;
-}
-
-section:nth-of-type(2) p,
-section:nth-of-type(3) p,
-section:nth-of-type(4) p, 
-section:nth-of-type(5) p,
-section:nth-of-type(6) p{
-font-size: 1.2em;
-}
-
-footer p {
-font-size: 1em;
-}
-}
