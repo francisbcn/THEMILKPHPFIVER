@@ -1,6 +1,8 @@
+
 <?php
 require_once('models/Consulta.php');
 require_once('models/BaseMysql.php');
+
 
 $bd = new BaseMysql();
 $consulta = new Consulta();
@@ -8,7 +10,7 @@ $consulta = new Consulta();
 $productos = [];
 
 if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
-    $productos = $consulta->buscarProducto($bd, 'nombre', $_GET['busqueda']);
+	$productos = $consulta->buscarProducto($bd, 'nombre', $_GET['busqueda']);
 }
 ?>
 <!DOCTYPE HTML>
@@ -45,7 +47,7 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 				<h1> Tienda de ropa LGTBIQ+ The Milk Barcelona</h1>
 				<p>Encuentra nuestra tienda artesanal en <span><a class="etsy-nombre" target="_blank" href="http s://www.etsy.com/es/shop/TheMilkBarcelona?ref=profile_header">Etsy</a></span></p>
 
-				<?php if (!isset($_SESSION['identity'])) : ?>
+				<?php if (!isset($_SESSION['identity'])):?>
 					<a href="<?= base_url ?>usuario.php"><i class="fa-regular fa-circle-user"></i><span class="milkiwer-inicio">#MILKIWER</span> </a>
 
 				<?php else : ?>
@@ -59,16 +61,18 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 			</section>
 
 
-			<picture class="container">
+			<picture class="conte-img" >
 				<a href="<?= base_url ?>">
 					<img class="header-img" src="<?= base_url ?>assets/img/the-milk-barcelona-logo.svg" alt="Hecho en Barcelona" title="The Milk Barcelona tienda LGTBIQ+">
+
+					
+					<img class="hidden-img" src="<?= base_url ?>assets/img/logo-solo.png" alt="Hecho en Barcelona" title="The Milk Barcelona tienda LGTBIQ+">
+				</a>
 				</a>
 			</picture>
-			
 
-
-			<div class="menus">
-				<nav class="nav-1">
+			<div class="menus contenedor">
+				<nav class="nav-1" id="menu-muestra">
 					<ul>
 						<li><a href="<?= base_url ?>">INICIO</a></li>
 						<li><a href="<?= base_url ?>tienda.php">#TIENDA</a></li>
@@ -77,22 +81,48 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 						<li><a href="<?= base_url ?>faq.php">FAQ</a></li>
 					</ul>
 				</nav>
+				<div id="burguer" onclick="openNav()">&#9776;</div>
+
+				<nav class=" sidenav" id="mySidenav">
+					<ul>
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<li><a class="activo" href="<?= base_url ?>">INICIO</a></li>
+						<li><a href="<?= base_url ?>tienda.php">#TIENDA</a></li>
+						<li><a href="<?= base_url ?>somos.php">SOMOS</a></li>
+						<li><a href="<?= base_url ?>contacto.php">CONTACTO</a></li>
+						<li><a href="<?= base_url ?>faq.php">FAQ</a></li>
+						<li>
+							<?php if (!isset($_SESSION['identity'])): ?>
+								<a href="<?= base_url ?>usuario.php"><i class="fa-regular fa-circle-user"></i><span class="milkiwer-inicio">#MILKIWER</span> </a>
+
+
+
+						<?php else: ?>
+						
+
+								<a class="user-logged" href="<?= base_url ?>usuario.php"><?= $_SESSION['identity']->nombre ?> <?= $_SESSION['identity']->apellidos ?></a>
+								<a href="<?= base_url ?>usuario/logout">Cerrar sesión</a>
+
+							
+						<?php endif; ?>
+						</li>
+					</ul>
+				</nav>
+
 				<nav class="nav-2">
 					<ul>
 						<li><a href="<?= base_url ?>usuario.php"><i class="fa-regular fa-circle-user" alt="Iniciar sesion" title="user the milk barcelona"></i></a></li>
-
-						<?php $stats = Utils::statsCarrito(); ?>
-
-						<li><a href="<?= base_url ?>carrito/index"><i class="fa-solid fa-cart-arrow-down" alt="carrito the milk Barcelona" title="carrito the milk barcelona"></i></a></li>
-
+						<?php $stats = Utils::statsCarrito();?>
+						<li><a href="<?= base_url ?>carrito.php"><i class="fa-solid fa-cart-arrow-down" alt="carrito the milk Barcelona" title="carrito the milk barcelona"></i></a></li>
 						<li><a href="<?= base_url ?>busqueda.php"><i class="fa-solid fa-magnifying-glass" alt="busqueda the milk Barcelona" title="busqueda the milk barcelona"></i></a></li>
-	
+
 					</ul>
 				</nav>
 			</div>
 		</header>
 
 
+		<div id="content">
 
 
 

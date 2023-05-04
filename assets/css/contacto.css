@@ -1,8 +1,3 @@
-@import url(fonts.css);
-@import url(reset.css);
-@import url(breadcum.css);
-@import url(styles.css);
-
 :root {
     --green-color: #2AB0A1;
     --milk-color: #fcfcfc;
@@ -13,13 +8,6 @@
     --font: 'Roboto', sans-serif, 'Open Sans';
   }
   
-  *,
-  *::before,
-  *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
   #error {
     text-align: center;
     margin-bottom: 1rem;
@@ -118,3 +106,65 @@
     background-position-y: center;
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 600px) {
+    .form{
+      width: 100% !important;
+    }
+    /* Estilos para las etiquetas */
+    .form-1 section div label {
+      font-size: 0.8rem;
+    }
+  
+    /* Estilos para los campos de entrada */
+    .form-1 section div select,
+    .form-1 section div input[type="text"],
+    .form-1 section div input[type="email"],
+    .form-1 section div input[type="password"],
+    .form-1 section div textarea {
+      font-size: 0.8rem;
+      padding: 0.5rem;
+    }
+  
+    /* Estilos para el botón de enviar */
+    .form-1 section #bottom {
+      font-size: 0.8rem;
+      padding: 0.5rem;
+    }
+  
+    /* Estilos para los mensajes de retroalimentación */
+    .form-1 section div .valid-feedback,
+    .form-1 section div .invalid-feedback {
+      font-size: 0.6rem;
+    }
+  }
+  
+
+
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para las etiquetas */
+    .form-1 section div label {
+      font-size: 0.9rem;
+    }
+  
+    /* Estilos para los campos de entrada */
+    .form-1 section div select,
+    .form-1 section div input[type="text"],
+    .form-1 section div input[type="email"],
+    .form-1 section div input[type="password"],
+    .form-1 section div textarea {
+      font-size: 0.9rem;
+    }
+  
+    /* Estilos para el botón de enviar */
+    .form-1 section #bottom {
+      font-size: 0.9rem;
+    }
+  
+    /* Estilos para los mensajes de retroalimentación */
+    .form-1 section div .valid-feedback,
+    .form-1 section div .invalid-feedback {
+      font-size: 0.7rem;
+    }
+  }
+  

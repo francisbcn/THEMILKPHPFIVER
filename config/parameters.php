@@ -1,4 +1,4 @@
 <?php
-define("base_url", "http://localhost/milk-store2/");
+define("base_url", "http://localhost/THEMILKPHPFIVER/");
 define("controller_default", "productoController");
 define("action_default", "index");
