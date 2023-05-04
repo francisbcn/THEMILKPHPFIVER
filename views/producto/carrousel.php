@@ -1,5 +1,4 @@
-<div class="container">
-
+<div>
 	<!-- <h2>Ropa para hombres gay</h2> -->
 	<div class="carrousel">
 		<div class="slides">

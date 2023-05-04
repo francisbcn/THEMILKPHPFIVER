@@ -125,8 +125,6 @@ header picture {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 30px 0px;
-  background-color: #fcfcfc;
 }
 header picture img {
   width: 100px;
@@ -706,6 +704,38 @@ table td img {
   transition: var(--transition-out);
 }
 
+
+.señal-a form.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  }
+
+  .señal-a form.search-form input.search-input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.2em;
+  margin-right: 10px;
+  }
+
+  .señal-a form.search-form button.search-btn {
+  padding: 10px 20px;
+  background-color: var(--gray-color);
+  border: 1px solid #ccc;
+  font-size: 1em;
+  cursor: pointer;
+  transition: var(--transition-in);
+  }
+
+  .señal-a form.search-form button.search-btn:hover {
+  background-color: var(--green-color);
+  color: #fff;
+  transition: var(--transition-out);
+  }
+
 /* ** // FOOTER STUFF // **  */
 
 footer {
@@ -854,6 +884,14 @@ footer span {
     margin: 0;
   }
 
+/*   banner */
+.señal-a h2 {
+
+  margin: 10px 0px 0px;
+  padding: 2rem 0;
+
+}
+
   /*HEADER*/
   header {
     position: sticky;
@@ -880,7 +918,7 @@ footer span {
     order: 1;
     display: flex;
     margin-left: 0.6rem;
-  
+
   }
 
   .hidden-img {
@@ -957,22 +995,22 @@ footer span {
     .footer-cont {
       flex-direction: column;
       align-items: center;
-      
+
     }
-  
+
     .foot-nav2 ul {
       margin: 0;
       text-align: center;
     }
-  
+
     .foot-nav2 li {
       margin-bottom: 10px;
     }
-  
+
     footer img {
       margin: 20px 0px;
     }
-  
+
     .derechos {
       font-size: 14px;
     }
@@ -992,14 +1030,14 @@ footer span {
   /*   .footer-cont {
       display: none;
     } */
-  
+
 }
 
 /* Tablets and small desktops */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   /*CONTAINER*/
   #container {
-    
+
       width: 100%;
       margin: 0;
   }
@@ -1112,7 +1150,7 @@ footer img {
 }
 }
 
-/* 
+/*
 @media (max-width: 850px) {
   body {
     background: #fff;

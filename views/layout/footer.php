@@ -1,6 +1,5 @@
 </div>
 </div>
-
 <!-- PIE DE PÁGINA -->
 <footer>
 	<div class="social-cont container">
@@ -16,8 +15,6 @@
 	<div class="footer-cont container">
 		<nav class="foot-nav1">
 			<ul>
-
-
 				<li>
 					<a href="<?= base_url ?>faq.php"><i class="fa-solid fa-circle-question" alt="preguntas frecuentes" title="preguntas frecuentes"></i> FAQ</a>
 				</li>
@@ -33,9 +30,7 @@
 				<li>
 					<?php if (!isset($_SESSION['identity'])) : ?>
 						<a href="<?= base_url ?>usuario.php">
-
 							<i id="boton" class="fa-solid fa-address-card" alt="acerca de" title="acerca de"></i>
-
 							LOGIN
 						</a>
 					<?php else : ?>
@@ -45,7 +40,6 @@
 				</li>
 			</ul>
 		</nav>
-		
 		<nav class="foot-nav2 container">
 			<ul>
 				<li><a href="<?= base_url ?>">INICIO</a></li>
@@ -64,7 +58,6 @@
 	<div class="derechos">
 		<p><span id="currentYear">&#169; The Milk Barcelona By Francis Pama</span></p>
 	</div>
-
 </footer>
 </div>
 <script type="module" src="<?= base_url ?>assets/js/jquery.min.js"></script>
@@ -76,17 +69,10 @@
 <script type="module" src="<?= base_url ?>assets/js/acordion.js"></script>
 <script type="module" src="<?= base_url ?>assets/js/time.js"></script>
 <script type="module" src="<?= base_url ?>assets/js/sidenav.js"></script>
-
-
-
 <!-- <script>
   document.querySelector('.header__logged-in a').addEventListener('click', function() {
   document.querySelector('form').classList.add('hide');
 });
-
 </script> -->
-
 </body>
-
-
 </html>

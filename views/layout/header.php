@@ -92,5 +92,4 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 			</div>
 		</header>
 		<div id="content">
-		<div id="content">
 <!-- 	//////////////////////// -->

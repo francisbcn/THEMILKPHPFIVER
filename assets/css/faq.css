@@ -13,13 +13,13 @@
     padding: 30px;
     font-family: var(--font);
   }
-  
+
   .container-faq h1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
   }
-  
+
   .accordion {
     background-color: var(--milk-color);
     color: var(--dark-color);
@@ -32,14 +32,14 @@
     transition: var(--transition-out);
     margin-bottom: 10px;
   }
-  
+
   .accordion:hover,
   .accordion.active {
     background-color: var(--green-color);
     color: var(--milk-color);
     transition: var(--transition-in);
   }
-  
+
   .panel {
     padding: 0 18px;
     background-color: var(--white-color);
@@ -47,7 +47,7 @@
     transition: max-height 0.2s ease-out;
     max-height: 0;
   }
-  
+
   .panel p {
     font-size: 1em;
     line-height: 1.5em;
@@ -61,18 +61,45 @@
     max-width: 100%;
     padding: 20px;
     font-size: 1.2rem;
+
+    line-height:1.7rem;
+
+
   }
   .container-faq h1 {
     font-size: 2.5rem;
   }
   .accordion {
-    padding: 15px;
-    margin-bottom: 8px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
   }
   .panel p {
     font-size: 1.1rem;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
   }
+
+/*   FORM BSUQUEDA*/
+.container-faq form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container-faq form input[type="text"] {
+  width: 60%;
+  margin-right: 10px;
+}
+
+.container-faq form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--dark-color);
+  border: 1px solid #ccc;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
 }
 
 /* Pantallas de hasta 600px */
@@ -82,16 +109,42 @@
     max-width: 90%;
     padding: 15px;
     font-size: 1.1rem;
+    line-height:1.7rem;
   }
   .container-faq h1 {
     font-size: 2rem;
+    margin:3rem 0;
   }
   .accordion {
-    padding: 12px;
-    margin-bottom: 6px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
   }
   .panel p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.3rem;
+
   }
+/*   FORM BSUQUEDA*/
+  .container-faq form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .container-faq form input[type="text"] {
+    width: 70%;
+    margin-right: 10px;
+  }
+
+  .container-faq form input[type="submit"] {
+    padding: 10px;
+    background-color: var(--dark-color);
+    border: 1px solid #ccc;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
 }

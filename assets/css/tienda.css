@@ -516,6 +516,10 @@ button:hover {
     height: 25px;
     font-size: 0.8rem;
   }
+    .tienda-banner h2{
+    margin: 10px 0px 0px;
+    padding: 2rem 0;
+    }
 
 }
 
